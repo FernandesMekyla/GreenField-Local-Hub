@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>c1c37478-0154-4c9e-9fdf-9e070315e26c</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>GreenField Local Hub</Name>
+    <RootNamespace>GreenField Local Hub</RootNamespace>
+    <SuppressEnvironmentCreationPrompt>True</SuppressEnvironmentCreationPrompt>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="runserver.py" />
+    <Compile Include="GreenField_Local_Hub\__init__.py" />
+    <Compile Include="GreenField_Local_Hub\views.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GreenField_Local_Hub\" />
+    <Folder Include="GreenField_Local_Hub\static\" />
+    <Folder Include="GreenField_Local_Hub\static\content\" />
+    <Folder Include="GreenField_Local_Hub\static\fonts\" />
+    <Folder Include="GreenField_Local_Hub\static\images\" />
+    <Folder Include="GreenField_Local_Hub\static\scripts\" />
+    <Folder Include="GreenField_Local_Hub\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GreenField_Local_Hub\static\images\all purpose flour.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\amul fresh cream.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\apples.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\banana bread.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\banana.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\blueberries.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\carrots.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\chocolate brownies.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\ciabatta-rolls.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\croissants.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\cucumbers.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\eggs.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\fish.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\focaccia.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\grapes.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\lemons.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\meat.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\mince.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\muffins.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\onions.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\oranges.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\organic plain flour.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\panini.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\pears.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\pineapples.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\pork ribs.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\potatoes.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\salmon fillet.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\season vegetables box.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\semi skimmed milk.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\strawberries.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\tomatoes.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\whipped cream.jpg" />
+    <Content Include="GreenField_Local_Hub\static\images\whole milk.jpg" />
+    <Content Include="GreenField_Local_Hub\static\script.js" />
+    <Content Include="GreenField_Local_Hub\static\styles.css" />
+    <Content Include="GreenField_Local_Hub\templates\admin-dasboard.html" />
+    <Content Include="GreenField_Local_Hub\templates\base.html" />
+    <Content Include="GreenField_Local_Hub\templates\catalogue.html" />
+    <Content Include="GreenField_Local_Hub\templates\checkout.html" />
+    <Content Include="GreenField_Local_Hub\templates\login.html" />
+    <Content Include="GreenField_Local_Hub\templates\register.html" />
+    <Content Include="requirements.txt" />
+    <Content Include="GreenField_Local_Hub\static\content\bootstrap.css" />
+    <Content Include="GreenField_Local_Hub\static\content\bootstrap.min.css" />
+    <Content Include="GreenField_Local_Hub\static\content\site.css" />
+    <Content Include="GreenField_Local_Hub\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="GreenField_Local_Hub\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="GreenField_Local_Hub\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="GreenField_Local_Hub\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="GreenField_Local_Hub\static\scripts\bootstrap.js" />
+    <Content Include="GreenField_Local_Hub\static\scripts\bootstrap.min.js" />
+    <Content Include="GreenField_Local_Hub\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="GreenField_Local_Hub\static\scripts\jquery-1.10.2.js" />
+    <Content Include="GreenField_Local_Hub\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="GreenField_Local_Hub\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="GreenField_Local_Hub\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="GreenField_Local_Hub\static\scripts\jquery.validate.js" />
+    <Content Include="GreenField_Local_Hub\static\scripts\jquery.validate.min.js" />
+    <Content Include="GreenField_Local_Hub\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="GreenField_Local_Hub\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="GreenField_Local_Hub\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="GreenField_Local_Hub\static\scripts\respond.js" />
+    <Content Include="GreenField_Local_Hub\static\scripts\respond.min.js" />
+    <Content Include="GreenField_Local_Hub\static\scripts\_references.js" />
+    <Content Include="GreenField_Local_Hub\templates\about.html" />
+    <Content Include="GreenField_Local_Hub\templates\contact.html" />
+    <Content Include="GreenField_Local_Hub\templates\index.html" />
+    <Content Include="GreenField_Local_Hub\templates\producer-dashboard.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.13</Version>
+      <Description>env (Python 3.13 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

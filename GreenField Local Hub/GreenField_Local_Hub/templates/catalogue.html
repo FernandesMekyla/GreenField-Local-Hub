@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="page" aria-labelledby="catalogue-title">
+    <h1 id="catalogue-title">Product Catalogue</h1>
+
+    <div class="filter-container">
+        <label for="category">Filter by category:</label>
+        <select id="category" onchange="window.location='?category=' + this.value;">
+            <option value="all" {% if selected_category == 'all' %}selected{% endif %}>All</option>
+            <option value="bakery" {% if selected_category == 'bakery' %}selected{% endif %}>Bakery</option>
+            <option value="dairy" {% if selected_category == 'dairy' %}selected{% endif %}>Dairy & Eggs</option>
+            <option value="vegetables" {% if selected_category == 'vegetables' %}selected{% endif %}>Vegetables</option>
+            <option value="fruits" {% if selected_category == 'fruits' %}selected{% endif %}>Fruits</option>
+            <option value="meat_fish" {% if selected_category == 'meat_fish' %}selected{% endif %}>Meat & Fish</option>
+        </select>
+    </div>
+
+    <div class="product-grid">
+        {% for product in products %}
+        <article class="product-card">
+            <img src="{{ url_for('static', filename=product.image) }}" alt="{{ product.name }}">
+            <h2>{{ product.name }}</h2>
+            <p class="product-description">{{ product.description }}</p>
+            <p class="product-price">£{{ "%.2f"|format(product.price) }}</p>
+            <button class="btn secondary-btn">Add to Cart</button>
+        </article>
+        {% endfor %}
+    </div>
+
+    {% if products|length == 0 %}
+    <p>No products found in this category.</p>
+    {% endif %}
+</section>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section id="producer-dashboard" class="page" aria-labelledby="producer-title">
+    <h1 id="producer-title">Producer Dashboard</h1>
+
+    <section class="dashboard-grid">
+        <article class="dashboard-card">
+            <h2>Your Summary</h2>
+            <ul>
+                <li><strong>Active Products:</strong> 8</li>
+                <li><strong>Orders This Week:</strong> 14</li>
+                <li><strong>Pending Deliveries:</strong> 5</li>
+            </ul>
+        </article>
+
+        <article class="dashboard-card">
+            <h2>Recent Orders</h2>
+            <ul class="order-list">
+                <li><strong>Order #1580</strong> – Veg Box – 3 units</li>
+                <li><strong>Order #1575</strong> – Free-range Eggs – 2 units</li>
+                <li><strong>Order #1570</strong> – Apples – 1 unit</li>
+            </ul>
+        </article>
+
+        <article class="dashboard-card">
+            <h2>Product Management</h2>
+            <p>In a full implementation, you would add, edit, and manage your products here.</p>
+        </article>
+    </section>
+</section>
+
+{% endblock %}

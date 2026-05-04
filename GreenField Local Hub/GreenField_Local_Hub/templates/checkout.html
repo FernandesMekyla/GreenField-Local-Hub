@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="page" aria-labelledby="checkout-title">
+    <h1 id="checkout-title">Checkout</h1>
+    <p class="page-intro">Review your order and provide your details to complete the purchase.</p>
+
+    <section class="checkout-layout">
+        <div class="checkout-summary">
+            <h2>Order Summary</h2>
+            <ul class="cart-list">
+                {% for item in cart_items %}
+                <li>
+                    <span>{{ item.quantity }} × {{ item.name }}</span>
+                    <span>£{{ "%.2f"|format(item.quantity * item.price) }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+            <p class="checkout-total">
+                <strong>Total:</strong> £{{ "%.2f"|format(total) }}
+            </p>
+        </div>
+
+        <div class="checkout-form-wrapper">
+            <h2>Delivery Details</h2>
+            <form class="checkout-form">
+                <label for="full_name">Full name</label>
+                <input type="text" id="full_name" name="full_name" required>
+
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+
+                <label for="contact">Contact number</label>
+                <input type="tel" id="contact" name="contact" required>
+
+                <button type="submit" class="btn primary-btn">Place Order (placeholder)</button>
+            </form>
+        </div>
+    </section>
+</section>
+
+{% endblock %}

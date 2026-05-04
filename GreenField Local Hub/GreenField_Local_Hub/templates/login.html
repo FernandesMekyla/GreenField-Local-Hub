@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="form-page" aria-labelledby="login-title">
+    <h1 id="login-title">Login</h1>
+    <p class="form-intro">Access your Greenfield Local Hub account.</p>
+
+    <!-- ✅ DEMO ACCOUNTS BOX GOES HERE -->
+    <div class="demo-box">
+        <h3>Demo Accounts</h3>
+        <p><strong>Admin:</strong> admin@demo.com / admin123</p>
+        <p><strong>Producer:</strong> producer@demo.com / producer123</p>
+    </div>
+    <!-- END DEMO BOX -->
+
+    <form method="post" class="auth-form">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit" class="btn primary-btn">Login</button>
+
+        <p class="form-footer">
+            Don’t have an account?
+            <a href="{{ url_for('main.register') }}">Register here</a>.
+        </p>
+    </form>
+</section>
+
+{% endblock %}

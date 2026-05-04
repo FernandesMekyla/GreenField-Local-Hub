@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="admin-dashboard">
+
+    <h1 class="dashboard-title">Admin Dashboard</h1>
+    <p class="dashboard-subtitle">Manage users, products, and platform activity.</p>
+
+    <div class="admin-grid">
+
+        <!-- USERS -->
+        <article class="admin-card">
+            <h2>👥 Users</h2>
+            <p>View, edit, or remove registered users.</p>
+            <a href="#" class="btn secondary-btn">Manage Users</a>
+        </article>
+
+        <!-- PRODUCTS -->
+        <article class="admin-card">
+            <h2>🛒 Products</h2>
+            <p>Add new products, update listings, or remove items.</p>
+            <a href="#" class="btn secondary-btn">Manage Products</a>
+        </article>
+
+        <!-- PRODUCERS -->
+        <article class="admin-card">
+            <h2>🚜 Producers</h2>
+            <p>Approve new producers and manage existing ones.</p>
+            <a href="#" class="btn secondary-btn">Manage Producers</a>
+        </article>
+
+        <!-- ORDERS -->
+        <article class="admin-card">
+            <h2>📦 Orders</h2>
+            <p>Track customer orders and update order statuses.</p>
+            <a href="#" class="btn secondary-btn">View Orders</a>
+        </article>
+
+        <!-- ANALYTICS -->
+        <article class="admin-card">
+            <h2>📊 Analytics</h2>
+            <p>View platform performance and sales insights.</p>
+            <a href="#" class="btn secondary-btn">View Analytics</a>
+        </article>
+
+        <!-- SETTINGS -->
+        <article class="admin-card">
+            <h2>⚙️ Settings</h2>
+            <p>Update platform settings and admin preferences.</p>
+            <a href="#" class="btn secondary-btn">Platform Settings</a>
+        </article>
+
+    </div>
+
+</section>
+
+{% endblock %}

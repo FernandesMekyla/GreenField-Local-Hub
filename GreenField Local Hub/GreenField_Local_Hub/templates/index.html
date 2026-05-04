@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- HERO SECTION -->
+<section class="hero enhanced-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+        <h1>Fresh. Local. Sustainable.</h1>
+        <p>Discover the best produce from trusted farmers and small businesses in the Greenfield community.</p>
+        <a href="{{ url_for('main.catalogue') }}" class="btn primary-btn hero-btn">Shop Fresh Produce</a>
+    </div>
+</section>
+
+<!-- VALUE PROPOSITIONS -->
+<section class="value-section">
+    <h2>Why Choose Greenfield Local Hub?</h2>
+    <div class="value-grid">
+        <article class="value-card">
+            <h3>🌱 100% Local</h3>
+            <p>Every product comes directly from farmers and producers in your area.</p>
+        </article>
+
+        <article class="value-card">
+            <h3>🚜 Farm‑Fresh Quality</h3>
+            <p>Enjoy produce harvested at peak freshness — no long storage, no long transport.</p>
+        </article>
+
+        <article class="value-card">
+            <h3>🔍 Full Transparency</h3>
+            <p>Know exactly where your food comes from with clear, honest sourcing information.</p>
+        </article>
+
+        <article class="value-card">
+            <h3>🌍 Sustainable Choices</h3>
+            <p>Reduce food miles and support eco‑friendly farming practices.</p>
+        </article>
+    </div>
+</section>
+
+<!-- FEATURED PRODUCTS PREVIEW -->
+<section class="featured-products">
+    <h2>Customer Favourites</h2>
+    <div class="featured-grid">
+        <article class="featured-card">
+            <img src="{{ url_for('static', filename='images/strawberries.jpg') }}" alt="Strawberries">
+            <h3>Fresh Strawberries</h3>
+            <p>Sweet, juicy, and hand‑picked this morning.</p>
+        </article>
+
+        <article class="featured-card">
+            <img src="{{ url_for('static', filename='images/banana bread.jpg') }}" alt="Sourdough Bread">
+            <h3>Banana Bread</h3>
+            <p>Moist Banana bread for rich flavour.</p>
+        </article>
+
+        <article class="featured-card">
+            <img src="{{ url_for('static', filename='images/eggs.jpg') }}" alt="Eggs">
+            <h3>Free‑Range Eggs</h3>
+            <p>Laid by happy hens on local farms.</p>
+        </article>
+    </div>
+
+    <div class="center-btn">
+        <a href="{{ url_for('main.catalogue') }}" class="btn secondary-btn">Browse Full Catalogue</a>
+    </div>
+</section>
+
+{% endblock %}
